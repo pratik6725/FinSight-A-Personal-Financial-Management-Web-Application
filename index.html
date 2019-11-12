@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+    <link rel="stylesheet" media= "screen and (min-width: 1100px)" href="css/widescreen.css">
+    <title>FinSight Home</title>
+</head>
+<body id="Home">
+    <!--Navbar-->
+    <nav id="nav-bar">
+        <h1 class="logo">
+            <span class="text-primary"><i class="fas fa-file-invoice-dollar"></i></i> Fin
+            </span>Sight
+        </h1>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#What">What</a></li>
+            <li><a href="#Who">About Us</a></li>
+            <li><a href="http://localhost:8080/sip_calculator/index.html">SIP Calculator</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="http://localhost/dets/">Login</a></li>
+            <li><a href="http://localhost:8080/signup_db/signup.html">Sign-Up</a></li>
+        </ul>
+    </nav>
+<!--     header showcas-->    
+    <header id="showcase"> 
+        <div class="showcase-content">
+            <h1 class="l-heading">
+                    Insuring Your Future… Today.
+            </h1>
+            <p class="lead" style="color:whitesmoke">
+                    Finance is not merely about making money. It's about achieving our deep goals and protecting the fruits of our labor. It's about stewardship and, therefore, about achieving the good society.
+            </p>
+            <a href="http://localhost:8080/signup_db/signup.html" class="btn">Hurry, Sign Up Now!</a>
+        </div>
+
+    </header>
+<!--     Section: What we do    -->        
+    <section id="What" class="py-1">
+        <div class="container">
+            <h2 class="m-heading text-center"><span class="text-primary">What </span>We Do</h2>
+            <div class="items">
+                <div class="item">
+                    <i class="fas fa-university fa-2x"></i>
+                    <div>
+                        <h3>Investment Planning</h3>
+                        <p>Simple user friendly interfaces for future planning involving complex calculations at the backend.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="fas fa-book-reader fa-2x"></i>
+                    <div>
+                        <h3>Portfolio Management</h3>
+                        <p>Users can sign-up to create their own profile and then enter the data which is then processed by us to for bright future returns.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="fas fa-pencil-alt fa-2x"></i>
+                    <div>
+                        <h3>Tax Calculators, Latest News & Updates</h3>
+                        <p>Display all the latest news in the finance sector.</p>
+                    </div>
+            </div>
+        </div>
+    </section>    
+<!--     Section:Who We Are-->
+    <section id="Who">
+        <div class="who-img"></div>
+        <div class="who-text bg-dark p-2">
+            <h2 class="m-heading"><span class="text-primary">About</span> Us</h2>
+            <p>Team of third year engineering students currently doing B.Tech Information Technology</p>
+            <h3>Our Team</h3>
+            <ul class="list">
+                <center>
+                <p style="font-size:20px;font-family: Georgia;color:lime">Pratik Merchant: CEO &nbsp &nbsp &nbsp &nbsp Jignesh Nagda: Chairman</p>
+                <br>
+                <img src="img/PRATIK_PHOTO.JPG" alt="Pratik Merchant" height="225" width="225">                
+                <img src="img/JIGNESH_PHOTO.jpg" alt="Jignesh Nagda" height="225" width="225">
+                </center>           
+            </ul>
+        </div>
+    </section>
+    <!-- Section:Clients-->
+    <section id="clients"class="py-1">
+        <div class="container">
+            <h2 class="m-heading text-center">
+                <span class="text-primary">Our</span>
+                Partners
+            </h2>
+            <div class="items py-1">    
+                <div><img src="./img/logos/somaiya.png" alt="Client"></div>
+                <div><img src="./img/logos/sv.png" alt="Client"></div>
+                <div><img src="./img/logos/kjsce.jpg" alt="Client"></div>
+                <div><img src="./img/logos/sbi.png" alt="Client"></div>
+                <div><img src="./img/logos/bajaj.png" alt="Client"></div>
+            </div>
+        </div>
+    </section>
+<!--     section contact-->
+    <section id="contact">
+        <div class="contact-form bg-primary p-2">
+            <h2 class="m-heading">Contact Us</h2>
+            <p>Please use the form below to contact us</p>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter Name">
+                </div>
+                <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" name="phone" id="phone" placeholder="Enter Phone Number">
+                </div>
+                <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message"  placeholder="Enter Message"></textarea>
+                </div>
+                <input type="submit" value="Send" class="btn btn-dark">
+            </form>
+        </div>
+        <div id='map'><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.7602169494517!2d72.8972387142127!3d19.074277356984886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c627a20bcaa9%3A0xb2fd3bcfeac0052a!2sK.%20J.%20Somaiya%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1570631843467!5m2!1sen!2sin" width="850" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+    </section>
+
+
+
+
+    
+    <footer id="main-footer" class="bg-dark text-center py-1">
+        <div class="container">
+            <p>Copyright &copy; 2019, FinSight by Pratik & Jignesh, All Rights Reserved</p>
+        </div>
+
+    </footer>
+<script src="js/main.js"></script>    
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+</body>
+</html>
+
