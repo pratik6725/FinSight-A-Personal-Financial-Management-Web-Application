@@ -359,7 +359,7 @@ if (isset($_GET['del_task'])) {
 	<tbody>
 		<?php 
 		// select all tasks if page is visited or refreshed
-		$tasks = mysqli_query($db, "SELECT * FROM tasks");
+		$tasks = mysqli_query($db, "SELECT * FROM  tasks WHERE  uid='$userid'");
 
 		$i = 1; while ($row = mysqli_fetch_array($tasks)) { ?>
 			<tr>
