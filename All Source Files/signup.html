@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FinSight Sign-Up</title>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{% static 'cricbee/main.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="signup.css">
+	
+	<link href="css/datepicker3.css" rel="stylesheet">
+	<script type="text/javascript">
+function checkpass()
+{
+if(document.signup.password.value!=document.signup.repeatpassword.value)
+{
+alert('Password and Repeat Password field does not match');
+document.signup.repeatpassword.focus();
+return false;
+}
+return true;
+} 
+
+</script>
+</head>
+<body>
+
+    <div class="container register">
+                <div class="row">
+                    <div class="col-md-3 register-left">
+                        <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
+                        <h3>Welcome</h3>
+                        <p>You are 30 seconds away from managing your own money!</p>
+                       <a href="http://localhost/dets/"> 
+                        <input type="submit" name="" value="Login"/></a>
+                    </div>
+					<form role="form" action="our.jsp" method="post" id="" name="signup" onsubmit="return checkpass();">
+                    <div class="col-md-9 register-right">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <h3 class="register-heading">Register</h3>
+                                <div class="row register-form">
+                                    <div class="col-md-6">
+                                   
+										<div class="form-group">
+								<input class="form-control" placeholder="Full Name" name="name" type="text" required="true">
+							</div>
+							<div class="form-group">
+								<input class="form-control" placeholder="E-mail" name="email" type="email" required="true">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="mobilenumber" name="mobilenumber" placeholder="Mobile Number" maxlength="10" pattern="[0-9]{10}" required="true">
+							</div>
+							<div class="form-group">
+								<input class="form-control" placeholder="Password" name="password" type="password" value="" required="true">
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control" id="repeatpassword" name="repeatpassword" placeholder="Repeat Password" required="true">
+							</div>
+							<div class="checkbox">
+								<button type="submit" value="submit" name="submit" class="btn btn-primary">Register</button><span style="padding-left:250px">
+							</div>
+									
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					</form>
+                </div>
+
+            </div>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
